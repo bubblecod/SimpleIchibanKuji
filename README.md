@@ -11,29 +11,31 @@ You can use it in the [DEMO](https://tool.bucod.me/ichibankuji_demo/ "DEMO") env
 - You are not able to change and save parameters in incognito mode.
 - You are not able to save the progress of lottery in the DEMO environment.
 - You are not able to change icons or animations in the DEMO environment.
+- You can use the browser's zoom function (Ctrl + wheel) to adjust the display ratio of the IchibanKuji page.
 
 ### How to set parameters<a id='paras'></a>
 Level | Parameter | Description
 ------------- | ------------- | -------------
-(root) | title | 
-(root) | name | 
-content | height | 
-content | width | 
-content | prize | 
-content | counter | 
-content | big_prize | 
-content | big_prize_color | 
-anime | win | 
-anime | troll | 
-anime | anime_time | 
-style | main | 
-style | secondary | 
-style | highlight | 
-style | background1 | 
-style | background2 | 
-style | fontcolor1 | 
-style | fontcolor2 | 
-style | icon | 
+(root) | title | Set title property for the tab of page
+(root) | name | Showing the name on top of the IchibanKuji panel
+content | height | Rows of IchibanKuji, shows as </br>1</br>2</br>3</br>...
+content | width | Columns of IchibanKuji, shows as ABC...
+content | prize | Prizes that going randomly into IchibanKuji (within the range of height x width). Each character turns into one prize.
+content | counter | Define which type(s) of prize should be counted
+content | big_prize | Define which type(s) of prize as special prize
+content | big_prize_color | background color for big/special prize (deg of hue)
+anime | win | Define the winning anime shows when the big/special prize reveals (relative path or URL)
+anime | troll | Define the fake winning anime shows when the normal prize reveals (relative path or URL)
+anime | anime_time | Time of anime (in millisecond)
+style | main | main color
+style | secondary | secondary color
+style | highlight | highlight background color when hover over
+style | background1 | outter background color
+style | background2 | inner background color
+style | fontcolor1 | outter font color
+style | fontcolor2 | inner font color
+style | icon | icon for hidden prizes of IchibanKuji (relative path or URL)
+
 
 ### Others
 
@@ -60,8 +62,8 @@ content | prize | 獎項，一個字元代表一個獎項，隨機分配於高x�
 content | counter | 開獎計數器，可以無/部分/全部獎項計數，計數器順序同設定值順序
 content | big_prize | 定義為大獎的獎項
 content | big_prize_color | 大獎底色(色調偏移，單位為deg)
-anime | win | 大獎動畫
-anime | troll | 欺騙動畫
+anime | win | 大獎動畫 (相對路徑或URL)
+anime | troll | 欺騙動畫 (相對路徑或URL)
 anime | anime_time | 動畫持續時間(毫秒)
 style | main | 主色調
 style | secondary | 副色調
@@ -70,6 +72,6 @@ style | background1 | 主背景色
 style | background2 | 副背景色
 style | fontcolor1 | 主文字顏色
 style | fontcolor2 | 副文字顏色
-style | icon | 一番賞圖示
+style | icon | 一番賞圖示 (相對路徑或URL)
 
 ### 其他
